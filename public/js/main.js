@@ -13,7 +13,7 @@ window.reloadList = function() {
 require(['react', 'reactDom', 'components/RegionList', 'components/ReloadButton'], function(React, ReactDOM, RegionList, ReloadButton) {
     ReactDOM.render(
         React.createElement(RegionList, { url: '/api/regions' }),
-        document.getElementById('regions')
+        document.getElementById('content')
     );
     ReactDOM.render(
         React.createElement(ReloadButton),
